@@ -34,6 +34,12 @@ export class TaskService {
 
   updateTask(id: number, status: StatusType) {
     // complete the code to update a task's status...
+    this.taskList.forEach((task) => {
+      if(task.id === id) {
+        task.status = status;
+      }
+    });
+    this.observer.next(this.taskList);
   }
 
 

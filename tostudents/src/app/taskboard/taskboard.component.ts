@@ -8,7 +8,7 @@ import { TaskService } from '../task.service';
   styleUrls: ['./taskboard.component.css']
 })
 export class TaskboardComponent {
-  private statusList = [StatusType['NotStarted'], StatusType['InProgress'], StatusType['Completed']];
+  private statusList = [StatusType.NotStarted, StatusType.InProgress, StatusType.Completed];
   taskList: Task[] = [];
   showTaskForm = false;
   constructor(private taskService: TaskService) {}
