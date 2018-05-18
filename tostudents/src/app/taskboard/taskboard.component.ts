@@ -23,7 +23,6 @@ export class TaskboardComponent {
 
   changeValueTaskForm(){
     this.showTaskForm = !this.showTaskForm;
-    console.log()
   }
 
   saveInput(param) {

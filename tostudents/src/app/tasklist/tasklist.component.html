@@ -8,8 +8,7 @@
 <div *ngFor="let task of tasks">
   <task
     *ngIf="checkStatus(task)"
-    [task]="task"
-    [ngSwitch]="task.status">
+    [task]="task">
 
   </task>
 </div>
